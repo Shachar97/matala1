@@ -23,7 +23,7 @@ libclassloops.a: $(OBJECTS_LIB)
 
 loopd:
 libclassloops.so: $(OBJECTS_LIB)
-	$(CC) -shared -o libclassloops.so $(OBJECTS_LIB)
+	$(CC) -shared -fPIC -o libclassloops.so $(OBJECTS_LIB)
 
 recursives:
 libclassrec.a: $(OBJECTS_R_LIB) 
@@ -31,7 +31,7 @@ libclassrec.a: $(OBJECTS_R_LIB)
 	
 recursived:
 libclassrec.so: $(OBJECTS_R_LIB)
-	$(CC) -shared -o libclassrec.so $(OBJECTS_R_LIB)
+	$(CC) -shared -fPIC -o libclassrec.so $(OBJECTS_R_LIB)
 
 
 
